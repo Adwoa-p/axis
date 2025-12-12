@@ -1,16 +1,10 @@
-import { Button } from "./components/ui/button";
+import { Header } from "./components/ui/header";
 
 function App() {
 
   return (
     <>
-      <div className='bg-red-500'>
-        <Button
-          size="lg"
-        >
-          Hello
-        </Button>
-      </div>
+      <Header/>
     </>
   );
 }
