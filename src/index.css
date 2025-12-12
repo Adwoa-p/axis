@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: "Manrope", sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+.active-nav-item {
+  @apply oklch(0.6855 0.1965 28.32) font-semibold underline;
+}
+
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -49,10 +60,10 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
+  --primary: oklch(0.6855 0.1965 28.32); 
+  --primary-foreground: oklch(0.18 0.0033 17.46);
+  --secondary: oklch(0.18 0.0033 17.46);
+  --secondary-foreground: oklch(0.965 0.0106 106.6);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);
