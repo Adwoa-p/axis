@@ -184,7 +184,7 @@ function App() {
         <p className="text-lg mx-auto max-w-3xl line-clamp-4 text-center pt-2">
           We are here to deliver to you nothing but the best service
         </p>
-        <div className="grid grid-cols-4 gap-5 px-50 py-10">
+        <div className="grid md:grid-cols-3 grid-cols-4 gap-5 px-50 py-10">
           {
             testimonials.map((testimonial) => (
               <Card className="h-100 ">

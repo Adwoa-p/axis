@@ -9,11 +9,6 @@
   --font-serif: "Playfair Display", serif;
 }
 
-.active-nav-item {
-  @apply oklch(0.6855 0.1965 28.32) font-semibold underline;
-}
-
-
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

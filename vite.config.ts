@@ -11,4 +11,7 @@ export default defineConfig({
     { find: '@libs', replacement: path.resolve(__dirname, 'src/lib') }
   ]
   },
+  esbuild: {
+    logOverride: { "this-is-undefined-in-esm": "silent" }
+  }
 })
