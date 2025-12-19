@@ -6,12 +6,8 @@ import tailwindcss from "@tailwindcss/vite"
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: {
-     alias: [
-    { find: '@', replacement: path.resolve(__dirname, 'src') },
-    { find: '@libs', replacement: path.resolve(__dirname, 'src/lib') }
-  ]
-  },
-  esbuild: {
-    logOverride: { "this-is-undefined-in-esm": "silent" }
+    alias: {
+      "@": path.resolve(__dirname, "src")
+    }
   }
 })
